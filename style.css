@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam:wght@400;700&display=swap');
+
+
+body {
+    background-image: url(img/nordeste.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: 'New Amsterdam', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1s0vh;
+    margin:1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #f8f7f6;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.936); 
+}
+
+section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 3rem; 
+}
+
+section input {
+    width: 30rem; 
+    border: none; 
+    padding: 1rem; 
+    border-radius: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: #06000c; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 253, 253);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: rgb(248, 248, 248);
+    color: #050505;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultados-pesquisa {
+    width: 60rem; 
+    height: 46vh; 
+    overflow-y: auto; 
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-radius: 0.6rem; 
+}
+
+.item-resultados {
+    background: #0000009e;
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.item-resultados h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.item-resultados a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.item-resultados a:hover {
+    text-decoration: underline;
+}
+
+.descricao-meta {
+    color: rgb(7, 4, 0);
+    margin: 0.5rem 0;
+}
+
+
+footer {
+    background-color: #ffffff;
+    color: #070505;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    section input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+}
+
+.item-resultado h2 {
+    font-size: 1.3rem; 
+}
+
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 17rem; 
+    }
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 50vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; 
+    }
+
+.resultados-pesquisa {
+    width: 90%;
+    height: 50vh; 
+}
+
+.item-resultado h2 {
+    font-size: 1.1rem; 
+}
+
+footer {
+    font-size: 0.9rem;
+}
