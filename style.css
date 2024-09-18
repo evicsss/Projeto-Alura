@@ -11,8 +11,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 1s0vh;
-    margin:1rem;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -49,6 +49,7 @@ section button {
     color: rgb(255, 253, 253);
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 section button:hover {
@@ -58,6 +59,10 @@ section button:hover {
 }
 
 .resultados-pesquisa {
+    display: flex;               
+    flex-direction: column;     
+    align-items: center;         
+    justify-content: center;   
     width: 60rem; 
     height: 46vh; 
     overflow-y: auto; 
@@ -67,11 +72,13 @@ section button:hover {
 }
 
 .item-resultados {
+    width: 90%;                  
     background: #0000009e;
     border-radius: 0.6rem; 
     padding: 1rem; 
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;          
 }
 
 .item-resultados h2 {
@@ -106,61 +113,54 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-    }
     section input {
-        width: 25rem;
-        padding: 0.8rem;
+        width: 90%; 
+        padding: 1rem; 
+    }
+
+    section button {
+        width: 100%; 
+        padding: 1rem; 
     }
 
     .resultados-pesquisa {
-        width: 40rem;
-        height: 40vh;
+        width: 95%; 
+        height: auto;
     }
-}
 
-.item-resultado h2 {
-    font-size: 1.3rem; 
+    h1 {
+        font-size: 2.5rem; 
+    }
 }
 
 
 
 @media (max-width: 480px) {
+    
+    .some-non-essential-element {
+        display: none;
+    }
 
     h1 {
-        font-size: 1.8rem; 
+        font-size: 2.5rem; 
         letter-spacing: 0.1rem;
     }
 
     section input {
-        width: 17rem; 
+        width: 80%; 
+        max-width: 30rem;
     }
     }
 
     section button {
-        padding: 0.6rem 1rem; 
-        font-size: 0.9rem; 
+        padding: 1rem; 
+        min-width: 150px; 
     }
 
     .resultados-pesquisa {
-        width: 90%; 
-        height: 50vh; 
+        flex-direction: column; 
     }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; 
-    }
-
-.resultados-pesquisa {
-    width: 90%;
-    height: 50vh; 
-}
-
-.item-resultado h2 {
-    font-size: 1.1rem; 
-}
+    
 
 footer {
     font-size: 0.9rem;
