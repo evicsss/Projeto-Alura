@@ -1,7 +1,8 @@
 <h1 align="center"> Projeto Web </h1>
 
 <p align="center">
-  <img alt="imagem do projeto" src="C:\Users\allan\Desktop\Projeto-Alura\site.JPG" width="100%">
+  <img alt="![image](https://github.com/user-attachments/assets/b63e2fc4-0fff-40e1-9e7b-6187f618fe22)
+" width="100%">
 </p>
 
 <p align="center">
